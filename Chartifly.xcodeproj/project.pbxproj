@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23094EC42607005B00BA8475 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23094EC32607005B00BA8475 /* SpotifyiOS.framework */; };
+		23094ED42607028D00BA8475 /* SpotifyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094ED32607028D00BA8475 /* SpotifyDataManager.swift */; };
+		239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A02606F94E00A2D39B /* AppDelegate.swift */; };
+		239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A22606F94E00A2D39B /* SceneDelegate.swift */; };
+		239F08A52606F94E00A2D39B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A42606F94E00A2D39B /* LoginController.swift */; };
+		239F08AA2606F95200A2D39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239F08A92606F95200A2D39B /* Assets.xcassets */; };
+		239F08AD2606F95200A2D39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239F08AB2606F95200A2D39B /* LaunchScreen.storyboard */; };
+		239F08B82606F95300A2D39B /* ChartiflyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08B72606F95300A2D39B /* ChartiflyTests.swift */; };
+		239F08C32606F95300A2D39B /* ChartiflyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08C22606F95300A2D39B /* ChartiflyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		239F08B42606F95200A2D39B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239F08952606F94E00A2D39B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 239F089C2606F94E00A2D39B;
+			remoteInfo = Chartifly;
+		};
+		239F08BF2606F95300A2D39B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239F08952606F94E00A2D39B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 239F089C2606F94E00A2D39B;
+			remoteInfo = Chartifly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23094EC32607005B00BA8475 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyiOS.framework; path = Frameworks/SpotifyiOS.framework; sourceTree = "<group>"; };
+		23094ECB260701FB00BA8475 /* Chartifly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chartifly-Bridging-Header.h"; sourceTree = "<group>"; };
+		23094ED32607028D00BA8475 /* SpotifyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyDataManager.swift; sourceTree = "<group>"; };
+		239F089D2606F94E00A2D39B /* Chartifly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chartifly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		239F08A02606F94E00A2D39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		239F08A22606F94E00A2D39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		239F08A42606F94E00A2D39B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		239F08A92606F95200A2D39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		239F08AC2606F95200A2D39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		239F08AE2606F95200A2D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239F08B32606F95200A2D39B /* ChartiflyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartiflyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		239F08B72606F95300A2D39B /* ChartiflyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartiflyTests.swift; sourceTree = "<group>"; };
+		239F08B92606F95300A2D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239F08BE2606F95300A2D39B /* ChartiflyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartiflyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		239F08C22606F95300A2D39B /* ChartiflyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartiflyUITests.swift; sourceTree = "<group>"; };
+		239F08C42606F95300A2D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		239F089A2606F94E00A2D39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23094EC42607005B00BA8475 /* SpotifyiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F08B02606F95200A2D39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F08BB2606F95300A2D39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23094ED22607027C00BA8475 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				23094ED32607028D00BA8475 /* SpotifyDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		239F08942606F94E00A2D39B = {
+			isa = PBXGroup;
+			children = (
+				23094ECB260701FB00BA8475 /* Chartifly-Bridging-Header.h */,
+				239F089F2606F94E00A2D39B /* Chartifly */,
+				239F08B62606F95300A2D39B /* ChartiflyTests */,
+				239F08C12606F95300A2D39B /* ChartiflyUITests */,
+				239F089E2606F94E00A2D39B /* Products */,
+				239F08D92606FC7300A2D39B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		239F089E2606F94E00A2D39B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				239F089D2606F94E00A2D39B /* Chartifly.app */,
+				239F08B32606F95200A2D39B /* ChartiflyTests.xctest */,
+				239F08BE2606F95300A2D39B /* ChartiflyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		239F089F2606F94E00A2D39B /* Chartifly */ = {
+			isa = PBXGroup;
+			children = (
+				23094ED22607027C00BA8475 /* Managers */,
+				239F08A02606F94E00A2D39B /* AppDelegate.swift */,
+				239F08A22606F94E00A2D39B /* SceneDelegate.swift */,
+				239F08A42606F94E00A2D39B /* LoginController.swift */,
+				239F08A92606F95200A2D39B /* Assets.xcassets */,
+				239F08AB2606F95200A2D39B /* LaunchScreen.storyboard */,
+				239F08AE2606F95200A2D39B /* Info.plist */,
+			);
+			path = Chartifly;
+			sourceTree = "<group>";
+		};
+		239F08B62606F95300A2D39B /* ChartiflyTests */ = {
+			isa = PBXGroup;
+			children = (
+				239F08B72606F95300A2D39B /* ChartiflyTests.swift */,
+				239F08B92606F95300A2D39B /* Info.plist */,
+			);
+			path = ChartiflyTests;
+			sourceTree = "<group>";
+		};
+		239F08C12606F95300A2D39B /* ChartiflyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				239F08C22606F95300A2D39B /* ChartiflyUITests.swift */,
+				239F08C42606F95300A2D39B /* Info.plist */,
+			);
+			path = ChartiflyUITests;
+			sourceTree = "<group>";
+		};
+		239F08D92606FC7300A2D39B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23094EC32607005B00BA8475 /* SpotifyiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		239F089C2606F94E00A2D39B /* Chartifly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239F08C72606F95300A2D39B /* Build configuration list for PBXNativeTarget "Chartifly" */;
+			buildPhases = (
+				239F08992606F94E00A2D39B /* Sources */,
+				239F089A2606F94E00A2D39B /* Frameworks */,
+				239F089B2606F94E00A2D39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chartifly;
+			productName = Chartifly;
+			productReference = 239F089D2606F94E00A2D39B /* Chartifly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		239F08B22606F95200A2D39B /* ChartiflyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239F08CA2606F95300A2D39B /* Build configuration list for PBXNativeTarget "ChartiflyTests" */;
+			buildPhases = (
+				239F08AF2606F95200A2D39B /* Sources */,
+				239F08B02606F95200A2D39B /* Frameworks */,
+				239F08B12606F95200A2D39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				239F08B52606F95200A2D39B /* PBXTargetDependency */,
+			);
+			name = ChartiflyTests;
+			productName = ChartiflyTests;
+			productReference = 239F08B32606F95200A2D39B /* ChartiflyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		239F08BD2606F95300A2D39B /* ChartiflyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239F08CD2606F95300A2D39B /* Build configuration list for PBXNativeTarget "ChartiflyUITests" */;
+			buildPhases = (
+				239F08BA2606F95300A2D39B /* Sources */,
+				239F08BB2606F95300A2D39B /* Frameworks */,
+				239F08BC2606F95300A2D39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				239F08C02606F95300A2D39B /* PBXTargetDependency */,
+			);
+			name = ChartiflyUITests;
+			productName = ChartiflyUITests;
+			productReference = 239F08BE2606F95300A2D39B /* ChartiflyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		239F08952606F94E00A2D39B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					239F089C2606F94E00A2D39B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					239F08B22606F95200A2D39B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 239F089C2606F94E00A2D39B;
+					};
+					239F08BD2606F95300A2D39B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 239F089C2606F94E00A2D39B;
+					};
+				};
+			};
+			buildConfigurationList = 239F08982606F94E00A2D39B /* Build configuration list for PBXProject "Chartifly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 239F08942606F94E00A2D39B;
+			productRefGroup = 239F089E2606F94E00A2D39B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				239F089C2606F94E00A2D39B /* Chartifly */,
+				239F08B22606F95200A2D39B /* ChartiflyTests */,
+				239F08BD2606F95300A2D39B /* ChartiflyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		239F089B2606F94E00A2D39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F08AD2606F95200A2D39B /* LaunchScreen.storyboard in Resources */,
+				239F08AA2606F95200A2D39B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F08B12606F95200A2D39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F08BC2606F95300A2D39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		239F08992606F94E00A2D39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F08A52606F94E00A2D39B /* LoginController.swift in Sources */,
+				239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */,
+				23094ED42607028D00BA8475 /* SpotifyDataManager.swift in Sources */,
+				239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F08AF2606F95200A2D39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F08B82606F95300A2D39B /* ChartiflyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239F08BA2606F95300A2D39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F08C32606F95300A2D39B /* ChartiflyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		239F08B52606F95200A2D39B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 239F089C2606F94E00A2D39B /* Chartifly */;
+			targetProxy = 239F08B42606F95200A2D39B /* PBXContainerItemProxy */;
+		};
+		239F08C02606F95300A2D39B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 239F089C2606F94E00A2D39B /* Chartifly */;
+			targetProxy = 239F08BF2606F95300A2D39B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		239F08AB2606F95200A2D39B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				239F08AC2606F95200A2D39B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		239F08C52606F95300A2D39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		239F08C62606F95300A2D39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		239F08C82606F95300A2D39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = Chartifly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.Chartifly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chartifly-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		239F08C92606F95300A2D39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = Chartifly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.Chartifly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chartifly-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		239F08CB2606F95300A2D39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				INFOPLIST_FILE = ChartiflyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.ChartiflyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chartifly.app/Chartifly";
+			};
+			name = Debug;
+		};
+		239F08CC2606F95300A2D39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				INFOPLIST_FILE = ChartiflyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.ChartiflyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chartifly.app/Chartifly";
+			};
+			name = Release;
+		};
+		239F08CE2606F95300A2D39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				INFOPLIST_FILE = ChartiflyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.ChartiflyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chartifly;
+			};
+			name = Debug;
+		};
+		239F08CF2606F95300A2D39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				INFOPLIST_FILE = ChartiflyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.ChartiflyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chartifly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		239F08982606F94E00A2D39B /* Build configuration list for PBXProject "Chartifly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F08C52606F95300A2D39B /* Debug */,
+				239F08C62606F95300A2D39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239F08C72606F95300A2D39B /* Build configuration list for PBXNativeTarget "Chartifly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F08C82606F95300A2D39B /* Debug */,
+				239F08C92606F95300A2D39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239F08CA2606F95300A2D39B /* Build configuration list for PBXNativeTarget "ChartiflyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F08CB2606F95300A2D39B /* Debug */,
+				239F08CC2606F95300A2D39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239F08CD2606F95300A2D39B /* Build configuration list for PBXNativeTarget "ChartiflyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239F08CE2606F95300A2D39B /* Debug */,
+				239F08CF2606F95300A2D39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 239F08952606F94E00A2D39B /* Project object */;
+}
