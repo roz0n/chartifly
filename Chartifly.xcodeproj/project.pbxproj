@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23094EC42607005B00BA8475 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23094EC32607005B00BA8475 /* SpotifyiOS.framework */; };
 		23094ED42607028D00BA8475 /* SpotifyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094ED32607028D00BA8475 /* SpotifyDataManager.swift */; };
 		239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A02606F94E00A2D39B /* AppDelegate.swift */; };
 		239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A22606F94E00A2D39B /* SceneDelegate.swift */; };
@@ -36,8 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23094EC32607005B00BA8475 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyiOS.framework; path = Frameworks/SpotifyiOS.framework; sourceTree = "<group>"; };
-		23094ECB260701FB00BA8475 /* Chartifly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chartifly-Bridging-Header.h"; sourceTree = "<group>"; };
 		23094ED32607028D00BA8475 /* SpotifyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyDataManager.swift; sourceTree = "<group>"; };
 		239F089D2606F94E00A2D39B /* Chartifly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chartifly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239F08A02606F94E00A2D39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23094EC42607005B00BA8475 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +87,10 @@
 		239F08942606F94E00A2D39B = {
 			isa = PBXGroup;
 			children = (
-				23094ECB260701FB00BA8475 /* Chartifly-Bridging-Header.h */,
 				239F089F2606F94E00A2D39B /* Chartifly */,
 				239F08B62606F95300A2D39B /* ChartiflyTests */,
 				239F08C12606F95300A2D39B /* ChartiflyUITests */,
 				239F089E2606F94E00A2D39B /* Products */,
-				239F08D92606FC7300A2D39B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,14 +134,6 @@
 				239F08C42606F95300A2D39B /* Info.plist */,
 			);
 			path = ChartiflyUITests;
-			sourceTree = "<group>";
-		};
-		239F08D92606FC7300A2D39B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				23094EC32607005B00BA8475 /* SpotifyiOS.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,11 +438,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RYK6GDE7V9;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = Chartifly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,9 +446,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.Chartifly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Chartifly-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,11 +458,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RYK6GDE7V9;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = Chartifly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,9 +466,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notenoughscience.Chartifly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Chartifly-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

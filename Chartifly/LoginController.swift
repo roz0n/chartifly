@@ -29,7 +29,6 @@ class LoginController: UIViewController {
     }
     
     @objc func loginButtonTapped() {
-        print("Tapped login button!")
         loginToSpotify()
     }
     
@@ -42,14 +41,7 @@ class LoginController: UIViewController {
     }
     
     func loginToSpotify() {
-        // TODO: Call SceneDelegate's connect method
-        let scene = UIApplication.shared.connectedScenes.first
-
-        if let sceneDelegate: SceneDelegate = (scene?.delegate as? SceneDelegate) {
-            DispatchQueue.main.async {
-                sceneDelegate.connect()
-            }
-        }
+        print("Tapped login button!")
     }
     
 }

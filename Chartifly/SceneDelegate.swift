@@ -7,44 +7,7 @@
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate, SPTAppRemoteDelegate, SPTAppRemotePlayerStateDelegate, SPTSessionManagerDelegate {
-    
-    let SpotifyClientID = "f4dbd77ac1f34ca79a92decd8d6699da"
-    let SpotifyRedirectURL = URL(string: "chartifly-ios://spotify-login-callback")!
-    let kAccessTokenKey = "access-token-key"
-    var playURI = "spotify:track:31I3Rt1bPa2LrE74DdNizO"
-    
-    lazy var configuration = SPTConfiguration(
-        clientID: SpotifyClientID,
-        redirectURL: SpotifyRedirectURL
-    )
-    
-    lazy var appRemote: SPTAppRemote = {
-        print("Initializing Spotify App Remote...")
-        let appRemote = SPTAppRemote(configuration: self.configuration, logLevel: .debug)
-        appRemote.connectionParameters.accessToken = self.accessToken
-        appRemote.delegate = self
-        return appRemote
-    }()
-    
-    lazy var sessionManager: SPTSessionManager = {
-        if let tokenSwapURL = URL(string: "https://[my token swap app domain]/api/token"),
-           let tokenRefreshURL = URL(string: "https://[my token swap app domain]/api/refresh_token") {
-            self.configuration.tokenSwapURL = tokenSwapURL
-            self.configuration.tokenRefreshURL = tokenRefreshURL
-            self.configuration.playURI = "spotify:track:31I3Rt1bPa2LrE74DdNizO"
-        }
-        
-        let manager = SPTSessionManager.init(configuration: self.configuration, delegate: self)
-        return manager
-    }()
-    
-    var accessToken = UserDefaults.standard.string(forKey: "access-token-key") {
-        didSet {
-            let defaults = UserDefaults.standard
-            defaults.set(accessToken, forKey: self.kAccessTokenKey)
-        }
-    }
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
@@ -53,6 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, SPTAppRemoteDelegate, S
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
+        
         window = UIWindow(frame: scene.coordinateSpace.bounds)
         window?.windowScene = scene
         window?.makeKeyAndVisible()
@@ -87,72 +51,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, SPTAppRemoteDelegate, S
         // to restore the scene back to its current state.
     }
     
-    
-}
-
-// MARK: - Spotify Authentication Callback
-
-extension SceneDelegate {
-    
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        guard let url = URLContexts.first?.url else {
-            return
-        }
-        
-        let parameters = appRemote.authorizationParameters(from: url)
-        
-        if let accessToken = parameters?["code"] {
-            self.appRemote.connectionParameters.accessToken = accessToken
-            self.accessToken = accessToken
-        } else if let error = parameters?["error_description"] {
-            print("[Spotify SDK]: Connection error!", error)
-        }
-        
-//        let options: [UIApplication.OpenURLOptionsKey: Any] = [UIApplication.OpenURLOptionsKey:]
-//        let key: UIApplication.OpenURLOptionsKey = .
-//        self.sessionManager.application(UIApplication.shared.self, open: url, options: [UIApplication.OpenURLOptionsKey : Any])
-        
-    }
-    
-    func connect() {
-//        print("Called connect")
-//        self.appRemote.authorizeAndPlayURI(self.playURI)
-        self.appRemote.connect()
-//        let requestedScopes: SPTScope = [.appRemoteControl]
-//        self.sessionManager.initiateSession(with: requestedScopes, options: .default)
-    }
-    
-    func appRemoteDidEstablishConnection(_ appRemote: SPTAppRemote) {
-        print("[Spotify SDK]: Connected")
-
-        self.appRemote.playerAPI?.delegate = self
-        self.appRemote.playerAPI?.subscribe(toPlayerState: { (result, error) in
-            if let error = error {
-                debugPrint(error.localizedDescription)
-            }
-        })
-
-    }
-    
-    func appRemote(_ appRemote: SPTAppRemote, didDisconnectWithError error: Error?) {
-        print("[Spotify SDK]: Disconnected")
-    }
-    
-    func appRemote(_ appRemote: SPTAppRemote, didFailConnectionAttemptWithError error: Error?) {
-        print("[Spotify SDK]: Failed")
-    }
-    
-    func playerStateDidChange(_ playerState: SPTAppRemotePlayerState) {
-        print("[Spotify SDK]: Player State Changed")
-        debugPrint("Track name: %@", playerState.track.name)
-    }
-    
-    func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
-        print("[Spotify SDK]: Did Initiate Session Manager:", session)
-    }
-    
-    func sessionManager(manager: SPTSessionManager, didFailWith error: Error) {
-        print("[Spotify SDK]: Failed to Initiate Session Manager:", error)
-    }
     
 }
