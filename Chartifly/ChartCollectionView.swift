@@ -39,13 +39,7 @@ class ChartCollectionView: UICollectionViewController, UICollectionViewDelegateF
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        
-        if (indexPath.row % 2) == 0 {
-            cell.backgroundColor = .systemBlue
-        } else {
-            cell.backgroundColor = .systemPink
-        }
-    
+        cell.backgroundColor = (indexPath.row % 2) == 0 ? .systemBlue : .systemPink
         return cell
     }
 
