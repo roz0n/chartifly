@@ -20,7 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: scene.coordinateSpace.bounds)
         window?.windowScene = scene
         window?.makeKeyAndVisible()
-        window?.rootViewController = LoginController()
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        window?.rootViewController = ChartCollectionView(collectionViewLayout: layout)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
