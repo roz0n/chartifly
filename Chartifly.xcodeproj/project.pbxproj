@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		23094ED42607028D00BA8475 /* SpotifyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094ED32607028D00BA8475 /* SpotifyDataManager.swift */; };
 		23094F492609268800BA8475 /* ChartCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F482609268800BA8475 /* ChartCollectionView.swift */; };
-		23094F5226093BF900BA8475 /* MockSongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F5126093BF900BA8475 /* MockSongData.swift */; };
+		23094F5226093BF900BA8475 /* MockAudioData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F5126093BF900BA8475 /* MockAudioData.swift */; };
 		23094F5B260963D500BA8475 /* ChartCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F59260963D500BA8475 /* ChartCollectionCell.swift */; };
 		23094F5C260963D500BA8475 /* ChartCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23094F5A260963D500BA8475 /* ChartCollectionCell.xib */; };
 		23094F642609795D00BA8475 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F632609795D00BA8475 /* AudioPlayerManager.swift */; };
+		23094F8C2609815C00BA8475 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F8B2609815C00BA8475 /* Song.swift */; };
 		239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A02606F94E00A2D39B /* AppDelegate.swift */; };
 		239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A22606F94E00A2D39B /* SceneDelegate.swift */; };
 		239F08A52606F94E00A2D39B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A42606F94E00A2D39B /* LoginController.swift */; };
@@ -42,10 +43,11 @@
 /* Begin PBXFileReference section */
 		23094ED32607028D00BA8475 /* SpotifyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyDataManager.swift; sourceTree = "<group>"; };
 		23094F482609268800BA8475 /* ChartCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCollectionView.swift; sourceTree = "<group>"; };
-		23094F5126093BF900BA8475 /* MockSongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSongData.swift; sourceTree = "<group>"; };
+		23094F5126093BF900BA8475 /* MockAudioData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAudioData.swift; sourceTree = "<group>"; };
 		23094F59260963D500BA8475 /* ChartCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCollectionCell.swift; sourceTree = "<group>"; };
 		23094F5A260963D500BA8475 /* ChartCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCollectionCell.xib; sourceTree = "<group>"; };
 		23094F632609795D00BA8475 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		23094F8B2609815C00BA8475 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		239F089D2606F94E00A2D39B /* Chartifly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chartifly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239F08A02606F94E00A2D39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239F08A22606F94E00A2D39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,11 +100,54 @@
 		23094F5026093BB300BA8475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				23094F7F260980C200BA8475 /* Storyboards */,
+				23094F7126097FC600BA8475 /* Cells */,
 				23094F482609268800BA8475 /* ChartCollectionView.swift */,
+				239F08A42606F94E00A2D39B /* LoginController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23094F7126097FC600BA8475 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				23094F59260963D500BA8475 /* ChartCollectionCell.swift */,
 				23094F5A260963D500BA8475 /* ChartCollectionCell.xib */,
 			);
-			path = Views;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		23094F7E260980A200BA8475 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				239F08A02606F94E00A2D39B /* AppDelegate.swift */,
+				239F08A22606F94E00A2D39B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		23094F7F260980C200BA8475 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				239F08AB2606F95200A2D39B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		23094F80260980D000BA8475 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				23094F5126093BF900BA8475 /* MockAudioData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		23094F8A2609814400BA8475 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23094F8B2609815C00BA8475 /* Song.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		239F08942606F94E00A2D39B = {
@@ -128,15 +173,13 @@
 		239F089F2606F94E00A2D39B /* Chartifly */ = {
 			isa = PBXGroup;
 			children = (
+				23094F8A2609814400BA8475 /* Models */,
+				23094F80260980D000BA8475 /* Data */,
+				23094F7E260980A200BA8475 /* Application */,
 				23094F5026093BB300BA8475 /* Views */,
 				23094ED22607027C00BA8475 /* Managers */,
-				239F08A02606F94E00A2D39B /* AppDelegate.swift */,
-				239F08A22606F94E00A2D39B /* SceneDelegate.swift */,
-				239F08A42606F94E00A2D39B /* LoginController.swift */,
 				239F08A92606F95200A2D39B /* Assets.xcassets */,
-				239F08AB2606F95200A2D39B /* LaunchScreen.storyboard */,
 				239F08AE2606F95200A2D39B /* Info.plist */,
-				23094F5126093BF900BA8475 /* MockSongData.swift */,
 			);
 			path = Chartifly;
 			sourceTree = "<group>";
@@ -289,9 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23094F8C2609815C00BA8475 /* Song.swift in Sources */,
 				239F08A52606F94E00A2D39B /* LoginController.swift in Sources */,
 				239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */,
-				23094F5226093BF900BA8475 /* MockSongData.swift in Sources */,
+				23094F5226093BF900BA8475 /* MockAudioData.swift in Sources */,
 				23094F5B260963D500BA8475 /* ChartCollectionCell.swift in Sources */,
 				23094ED42607028D00BA8475 /* SpotifyDataManager.swift in Sources */,
 				23094F642609795D00BA8475 /* AudioPlayerManager.swift in Sources */,

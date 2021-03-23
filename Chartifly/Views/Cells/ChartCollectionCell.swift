@@ -15,7 +15,7 @@ class ChartCollectionCell: UICollectionViewCell {
             configureCoverImage()
         }
     }
-
+    
     // MARK: - IB Outlets
     
     @IBOutlet weak var containerStack: UIStackView!
@@ -26,7 +26,6 @@ class ChartCollectionCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
 }
@@ -44,6 +43,8 @@ extension ChartCollectionCell {
     }
     
     fileprivate func configureCoverImage() {
+        // TODO: Use SDWebImage
+        
         guard let song = song else { return }
         
         if let url = URL(string: song.artworkUrl) {
