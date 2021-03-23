@@ -12,6 +12,7 @@
 		23094F5226093BF900BA8475 /* MockSongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F5126093BF900BA8475 /* MockSongData.swift */; };
 		23094F5B260963D500BA8475 /* ChartCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F59260963D500BA8475 /* ChartCollectionCell.swift */; };
 		23094F5C260963D500BA8475 /* ChartCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23094F5A260963D500BA8475 /* ChartCollectionCell.xib */; };
+		23094F642609795D00BA8475 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F632609795D00BA8475 /* AudioPlayerManager.swift */; };
 		239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A02606F94E00A2D39B /* AppDelegate.swift */; };
 		239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A22606F94E00A2D39B /* SceneDelegate.swift */; };
 		239F08A52606F94E00A2D39B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A42606F94E00A2D39B /* LoginController.swift */; };
@@ -44,6 +45,7 @@
 		23094F5126093BF900BA8475 /* MockSongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSongData.swift; sourceTree = "<group>"; };
 		23094F59260963D500BA8475 /* ChartCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCollectionCell.swift; sourceTree = "<group>"; };
 		23094F5A260963D500BA8475 /* ChartCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCollectionCell.xib; sourceTree = "<group>"; };
+		23094F632609795D00BA8475 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		239F089D2606F94E00A2D39B /* Chartifly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chartifly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239F08A02606F94E00A2D39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239F08A22606F94E00A2D39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				23094ED32607028D00BA8475 /* SpotifyDataManager.swift */,
+				23094F632609795D00BA8475 /* AudioPlayerManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				23094F5226093BF900BA8475 /* MockSongData.swift in Sources */,
 				23094F5B260963D500BA8475 /* ChartCollectionCell.swift in Sources */,
 				23094ED42607028D00BA8475 /* SpotifyDataManager.swift in Sources */,
+				23094F642609795D00BA8475 /* AudioPlayerManager.swift in Sources */,
 				239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */,
 				23094F492609268800BA8475 /* ChartCollectionView.swift in Sources */,
 			);

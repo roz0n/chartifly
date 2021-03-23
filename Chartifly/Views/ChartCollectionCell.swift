@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AVKit
 
 class ChartCollectionCell: UICollectionViewCell {
     
@@ -14,6 +13,7 @@ class ChartCollectionCell: UICollectionViewCell {
         didSet {
             configureLabels()
             configureCoverImage()
+            AudioPlayerManager.shared.playAudio(from: song?.previewUrl)
         }
     }
 
