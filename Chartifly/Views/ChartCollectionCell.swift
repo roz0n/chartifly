@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import AVKit
 
 class ChartCollectionCell: UICollectionViewCell {
+    
+    var song: Song? {
+        didSet {
+            configureLabels()
+            configureCoverImage()
+        }
+    }
 
     // MARK: - IB Outlets
     
@@ -21,5 +29,41 @@ class ChartCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
+}
 
+// MARK: - UI Configuration
+
+extension ChartCollectionCell {
+    
+    fileprivate func configureLabels() {
+        if let song = song {
+            titleLabel.text = song.title
+            artistLabel.text = song.artist
+            albumLabel.text = song.album
+        }
+    }
+    
+    fileprivate func configureCoverImage() {
+        guard let song = song else { return }
+        
+        if let url = URL(string: song.artworkUrl) {
+            let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, error) in
+                guard let data = data else { return }
+                
+                if let error = error {
+                    print("Error downloading image:", error)
+                }
+                
+                DispatchQueue.main.async {
+                    let image = UIImage(data: data)
+                    self?.coverImage.image = image
+                }
+            }
+            
+            task.resume()
+        }
+    }
+    
 }
