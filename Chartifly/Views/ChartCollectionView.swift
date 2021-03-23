@@ -14,10 +14,11 @@ class ChartCollectionView: UICollectionViewController, UICollectionViewDelegateF
     var activePage: Int = 0
     
     fileprivate func playActivePageSong() {
-        let songToPlay = mockAudioData[activePage]
-        AudioPlayerManager.shared.playAudio(from: songToPlay.previewUrl)
-        
-        print("Playing song:", songToPlay.title)
+        if activePage <= mockAudioData.count {
+            let songToPlay = mockAudioData[activePage]
+            AudioPlayerManager.shared.playAudio(from: songToPlay.previewUrl)
+            print("Playing song:", songToPlay.title)
+        }
     }
     
     override func viewDidLoad() {
@@ -27,7 +28,7 @@ class ChartCollectionView: UICollectionViewController, UICollectionViewDelegateF
         self.collectionView!.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.isPagingEnabled = true
         
-        // Play first song
+        // Always autoplay the first song
         playActivePageSong()
     }
     

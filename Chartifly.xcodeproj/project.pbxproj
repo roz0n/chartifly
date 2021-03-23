@@ -14,6 +14,9 @@
 		23094F5C260963D500BA8475 /* ChartCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23094F5A260963D500BA8475 /* ChartCollectionCell.xib */; };
 		23094F642609795D00BA8475 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F632609795D00BA8475 /* AudioPlayerManager.swift */; };
 		23094F8C2609815C00BA8475 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F8B2609815C00BA8475 /* Song.swift */; };
+		23094F912609DE4F00BA8475 /* RegionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F902609DE4F00BA8475 /* RegionTableView.swift */; };
+		23094F9C2609DEB300BA8475 /* RegionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23094F9A2609DEB300BA8475 /* RegionTableCell.swift */; };
+		23094F9D2609DEB300BA8475 /* RegionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23094F9B2609DEB300BA8475 /* RegionTableCell.xib */; };
 		239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A02606F94E00A2D39B /* AppDelegate.swift */; };
 		239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A22606F94E00A2D39B /* SceneDelegate.swift */; };
 		239F08A52606F94E00A2D39B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F08A42606F94E00A2D39B /* LoginController.swift */; };
@@ -48,6 +51,9 @@
 		23094F5A260963D500BA8475 /* ChartCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCollectionCell.xib; sourceTree = "<group>"; };
 		23094F632609795D00BA8475 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		23094F8B2609815C00BA8475 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		23094F902609DE4F00BA8475 /* RegionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableView.swift; sourceTree = "<group>"; };
+		23094F9A2609DEB300BA8475 /* RegionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableCell.swift; sourceTree = "<group>"; };
+		23094F9B2609DEB300BA8475 /* RegionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionTableCell.xib; sourceTree = "<group>"; };
 		239F089D2606F94E00A2D39B /* Chartifly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chartifly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239F08A02606F94E00A2D39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239F08A22606F94E00A2D39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 				23094F7F260980C200BA8475 /* Storyboards */,
 				23094F7126097FC600BA8475 /* Cells */,
 				23094F482609268800BA8475 /* ChartCollectionView.swift */,
+				23094F902609DE4F00BA8475 /* RegionTableView.swift */,
 				239F08A42606F94E00A2D39B /* LoginController.swift */,
 			);
 			path = Views;
@@ -111,8 +118,8 @@
 		23094F7126097FC600BA8475 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				23094F59260963D500BA8475 /* ChartCollectionCell.swift */,
-				23094F5A260963D500BA8475 /* ChartCollectionCell.xib */,
+				23094F992609DE9400BA8475 /* RegionTable */,
+				23094F982609DE8B00BA8475 /* ChartCollection */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -150,6 +157,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		23094F982609DE8B00BA8475 /* ChartCollection */ = {
+			isa = PBXGroup;
+			children = (
+				23094F59260963D500BA8475 /* ChartCollectionCell.swift */,
+				23094F5A260963D500BA8475 /* ChartCollectionCell.xib */,
+			);
+			path = ChartCollection;
+			sourceTree = "<group>";
+		};
+		23094F992609DE9400BA8475 /* RegionTable */ = {
+			isa = PBXGroup;
+			children = (
+				23094F9A2609DEB300BA8475 /* RegionTableCell.swift */,
+				23094F9B2609DEB300BA8475 /* RegionTableCell.xib */,
+			);
+			path = RegionTable;
+			sourceTree = "<group>";
+		};
 		239F08942606F94E00A2D39B = {
 			isa = PBXGroup;
 			children = (
@@ -173,11 +198,11 @@
 		239F089F2606F94E00A2D39B /* Chartifly */ = {
 			isa = PBXGroup;
 			children = (
+				23094F7E260980A200BA8475 /* Application */,
 				23094F8A2609814400BA8475 /* Models */,
 				23094F80260980D000BA8475 /* Data */,
-				23094F7E260980A200BA8475 /* Application */,
-				23094F5026093BB300BA8475 /* Views */,
 				23094ED22607027C00BA8475 /* Managers */,
+				23094F5026093BB300BA8475 /* Views */,
 				239F08A92606F95200A2D39B /* Assets.xcassets */,
 				239F08AE2606F95200A2D39B /* Info.plist */,
 			);
@@ -305,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23094F9D2609DEB300BA8475 /* RegionTableCell.xib in Resources */,
 				239F08AD2606F95200A2D39B /* LaunchScreen.storyboard in Resources */,
 				239F08AA2606F95200A2D39B /* Assets.xcassets in Resources */,
 				23094F5C260963D500BA8475 /* ChartCollectionCell.xib in Resources */,
@@ -333,10 +359,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				23094F8C2609815C00BA8475 /* Song.swift in Sources */,
+				23094F9C2609DEB300BA8475 /* RegionTableCell.swift in Sources */,
 				239F08A52606F94E00A2D39B /* LoginController.swift in Sources */,
 				239F08A12606F94E00A2D39B /* AppDelegate.swift in Sources */,
 				23094F5226093BF900BA8475 /* MockAudioData.swift in Sources */,
 				23094F5B260963D500BA8475 /* ChartCollectionCell.swift in Sources */,
+				23094F912609DE4F00BA8475 /* RegionTableView.swift in Sources */,
 				23094ED42607028D00BA8475 /* SpotifyDataManager.swift in Sources */,
 				23094F642609795D00BA8475 /* AudioPlayerManager.swift in Sources */,
 				239F08A32606F94E00A2D39B /* SceneDelegate.swift in Sources */,
