@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "ChartCollectionCell"
 
 class ChartCollectionView: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
@@ -18,7 +18,8 @@ class ChartCollectionView: UICollectionViewController, UICollectionViewDelegateF
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        let nib = UINib(nibName: reuseIdentifier, bundle: nil)
+        self.collectionView!.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
         collectionView.isPagingEnabled = true
@@ -34,12 +35,12 @@ class ChartCollectionView: UICollectionViewController, UICollectionViewDelegateF
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 4
+        return mockSongData.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = (indexPath.row % 2) == 0 ? .systemBlue : .systemPink
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ChartCollectionCell
+        cell.contentView.backgroundColor = (indexPath.row % 2) == 0 ? .systemBlue : .systemPink
         return cell
     }
 

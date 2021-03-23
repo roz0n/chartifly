@@ -11,7 +11,5 @@ class SpotifyDataManager {
     
     static let shared = SpotifyDataManager()
     
-    // MARK: - SDK Configuration
-    
     
 }
