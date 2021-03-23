@@ -13,7 +13,6 @@ class ChartCollectionCell: UICollectionViewCell {
         didSet {
             configureLabels()
             configureCoverImage()
-            AudioPlayerManager.shared.playAudio(from: song?.previewUrl)
         }
     }
 
@@ -29,7 +28,6 @@ class ChartCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
     
 }
 
