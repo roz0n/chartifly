@@ -30,6 +30,25 @@ class ChartCollectionView: UICollectionViewController, UICollectionViewDelegateF
         
         // Always autoplay the first song
         playActivePageSong()
+        
+        // TESTING
+        self.definesPresentationContext = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let vc = UIViewController()
+        vc.view.backgroundColor = .clear
+        vc.modalPresentationStyle = .overCurrentContext
+        
+        let blurEffect = UIBlurEffect(style: .systemUltraThinMaterialDark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        
+        blurEffectView.frame = vc.view.frame
+        vc.view.insertSubview(blurEffectView, at: 0)
+        
+        present(vc, animated: true, completion: nil)
     }
     
 }
@@ -68,7 +87,6 @@ extension ChartCollectionView {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ChartCollectionCell
         cell.song = mockAudioData[indexPath.row]
-        cell.contentView.backgroundColor = (indexPath.row % 2) == 0 ? .systemBlue : .systemPink
         return cell
     }
     

@@ -26,6 +26,7 @@ class ChartCollectionCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.contentView.backgroundColor = .systemOrange
     }
     
 }
